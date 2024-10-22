@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Undergraduate student atWHUT, prospective postgraduate student at ShanghaiTech University.
+subtitle: Undergraduate student at WHUT, prospective postgraduate student at ShanghaiTech University.
 
 profile:
   align: left
