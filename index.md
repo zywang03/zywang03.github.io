@@ -34,7 +34,7 @@ Currently, I’m primarily working on VLA. If you share any similar interests, f
 ## Education
 
 - ShanghaiTech University, China
-  - Ph.D. in Computer Science and Engineering
+  - Master's in Computer Science and Engineering
   - 2025.09 - Present
 
 - Wuhan University of Technology, China
