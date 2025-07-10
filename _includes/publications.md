@@ -133,7 +133,7 @@ function showSelected() {
   const fullTab = document.getElementById('fullBtn');
   // const nonSelectedPublications = document.querySelectorAll('.non-selected-publication');
   const allPublications = document.querySelectorAll('.publication-item');
-  const selected = document.querySelectorAll('.preprint-publication');
+  const selected = document.querySelectorAll('.selected-publication');
   
   // // 隐藏非精选论文
   // nonSelectedPublications.forEach(item => {
