@@ -8,7 +8,7 @@ I am an incoming Master student (2025-2028) at <a href="https://www.shanghaitech
 
 ## Research Interests
 
-- **Large Language Model:** reinforment learning from human feedback(RLHF)
+- **Large Language Model:** reinforment learning from human feedback (RLHF)
 - **Vision Language Action Model:** post-training for VLAs
 
 Currently, I’m primarily working on VLA. If you share any similar interests, feel free to email me to discuss ideas and potential collaborations.
