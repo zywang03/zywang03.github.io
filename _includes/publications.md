@@ -131,11 +131,22 @@ function showSelected() {
   const selectedTab = document.getElementById('selectedBtn');
   const preprintTab = document.getElementById('preprintBtn');
   const fullTab = document.getElementById('fullBtn');
-  const nonSelectedPublications = document.querySelectorAll('.non-selected-publication');
+  // const nonSelectedPublications = document.querySelectorAll('.non-selected-publication');
+  const allPublications = document.querySelectorAll('.publication-item');
+  const selected = document.querySelectorAll('.preprint-publication');
   
-  // 隐藏非精选论文
-  nonSelectedPublications.forEach(item => {
+  // // 隐藏非精选论文
+  // nonSelectedPublications.forEach(item => {
+  //   item.classList.add('hidden');
+  // });
+  // 隐藏所有项
+  allPublications.forEach(item => {
     item.classList.add('hidden');
+  });
+
+  // 显示 精选 的项
+  selected.forEach(item => {
+    item.classList.remove('hidden');
   });
   
   // 更新tab状态
@@ -146,24 +157,20 @@ function showSelected() {
 
 function showPreprints() {
   const selectedTab = document.getElementById('selectedBtn');
-  const fullTab = document.getElementById('fullBtn');
   const preprintTab = document.getElementById('preprintBtn');
+  const fullTab = document.getElementById('fullBtn');
 
-  // const allPublications = document.querySelectorAll('.publication-item');
-  // const preprints = document.querySelectorAll('.preprint-publication');
-  const nonPreprintPublications = document.querySelectorAll('.non-preprint-publication');
+  const allPublications = document.querySelectorAll('.publication-item');
+  const preprints = document.querySelectorAll('.preprint-publication');
 
   // 隐藏所有项
-  // allPublications.forEach(item => {
-  //   item.classList.add('hidden');
-  // });
-
-  // // 显示 preprint 的项
-  // preprints.forEach(item => {
-  //   item.classList.remove('hidden');
-  // });
-  nonPreprintPublications.forEach(item => {
+  allPublications.forEach(item => {
     item.classList.add('hidden');
+  });
+
+  // 显示 preprint 的项
+  preprints.forEach(item => {
+    item.classList.remove('hidden');
   });
 
   // 更新 tab 状态
@@ -176,10 +183,14 @@ function showFull() {
   const selectedTab = document.getElementById('selectedBtn');
   const preprintTab = document.getElementById('preprintBtn');
   const fullTab = document.getElementById('fullBtn');
-  const nonSelectedPublications = document.querySelectorAll('.non-selected-publication');
+  // const nonSelectedPublications = document.querySelectorAll('.non-selected-publication');
+  const allPublications = document.querySelectorAll('.publication-item');
   
   // 显示所有论文
-  nonSelectedPublications.forEach(item => {
+  // nonSelectedPublications.forEach(item => {
+  //   item.classList.remove('hidden');
+  // });
+  allPublications.forEach(item => {
     item.classList.remove('hidden');
   });
   
