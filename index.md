@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am an incoming Master student (2025-2028) at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University(ShanghaiTech)</a> advised by <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Prof. Jingya Wang</a>, jointly with <a href="https://shiye21.github.io/">Prof. Ye Shi</a> in Shanghai, China. Prior to this, I received my Bachelor degree from <a href="https://english.whut.edu.cn">WHUT</a>.
+I am an incoming Master student (2025-2028) at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University (ShanghaiTech)</a> advised by <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Prof. Jingya Wang</a>, jointly with <a href="https://shiye21.github.io/">Prof. Ye Shi</a> in Shanghai, China. Prior to this, I received my Bachelor degree from <a href="https://english.whut.edu.cn">WHUT</a>.
 
 ## Research Interests
 
