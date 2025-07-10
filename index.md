@@ -8,6 +8,8 @@ I am an incoming Master student (2025-2028) at <a href="https://www.shanghaitech
 
 ## Research Interests
 
+My main area of interest focuses on <strong>foundation models</strong>.
+
 - **Large Language Model:** reinforment learning from human feedback (RLHF)
 - **Vision Language Action Model:** post-training for VLAs
 
