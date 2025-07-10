@@ -10,5 +10,5 @@ main:
     bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:3GMN2aeUkHoJ:scholar.google.com/&output=citation&scisdr=CgJEVzpKEJDS1KxPVOY:AAZF9b8AAAAAaG9JTOYXPrDQugCgGYORKuoQ6i0&scisig=AAZF9b8AAAAAaG9JTJJI-5miVt6h8cQVH-DDA20&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1
     # notes: Oral Presentation
     image: ./assets/img/flex_main_fig.png
-    selected: true
+    # selected: true
     preprint: true
