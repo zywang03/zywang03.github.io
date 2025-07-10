@@ -2,6 +2,7 @@
 
 <div class="publication-filter">
   <span id="selectedBtn" class="filter-tab active" onclick="showSelected()">Selected</span>
+  <span id="preprintBtn" class="filter-tab" onclick="showPreprints()">Preprints</span>
   <span id="fullBtn" class="filter-tab" onclick="showFull()">Full</span>
 </div>
 
@@ -10,7 +11,10 @@
 
 {% for link in site.data.publications.main %}
 
-<li class="publication-item {% if link.selected %}selected-publication{% else %}non-selected-publication{% endif %}">
+<!-- <li class="publication-item {% if link.selected %}selected-publication{% else %}non-selected-publication{% endif %}"> -->
+<li class="publication-item 
+  {% if link.selected %}selected-publication{% else %}non-selected-publication{% endif %} 
+  {% if link.preprint %}preprint-publication{% else %}non-preprint-publication{% endif %}">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
     {% if link.image %} 
@@ -125,6 +129,7 @@
 <script>
 function showSelected() {
   const selectedTab = document.getElementById('selectedBtn');
+  const preprintTab = document.getElementById('preprintBtn');
   const fullTab = document.getElementById('fullBtn');
   const nonSelectedPublications = document.querySelectorAll('.non-selected-publication');
   
@@ -135,11 +140,41 @@ function showSelected() {
   
   // 更新tab状态
   selectedTab.classList.add('active');
+  preprintTab.classList.remove('active');
+  fullTab.classList.remove('active');
+}
+
+function showPreprints() {
+  const selectedTab = document.getElementById('selectedBtn');
+  const fullTab = document.getElementById('fullBtn');
+  const preprintTab = document.getElementById('preprintBtn');
+
+  // const allPublications = document.querySelectorAll('.publication-item');
+  // const preprints = document.querySelectorAll('.preprint-publication');
+  const nonPreprintPublications = document.querySelectorAll('.non-preprint-publication');
+
+  // 隐藏所有项
+  // allPublications.forEach(item => {
+  //   item.classList.add('hidden');
+  // });
+
+  // // 显示 preprint 的项
+  // preprints.forEach(item => {
+  //   item.classList.remove('hidden');
+  // });
+  nonPreprintPublications.forEach(item => {
+    item.classList.add('hidden');
+  });
+
+  // 更新 tab 状态
+  selectedTab.classList.remove('active');
+  preprintTab.classList.add('active');
   fullTab.classList.remove('active');
 }
 
 function showFull() {
   const selectedTab = document.getElementById('selectedBtn');
+  const preprintTab = document.getElementById('preprintBtn');
   const fullTab = document.getElementById('fullBtn');
   const nonSelectedPublications = document.querySelectorAll('.non-selected-publication');
   
@@ -150,6 +185,7 @@ function showFull() {
   
   // 更新tab状态
   selectedTab.classList.remove('active');
+  preprintTab.classList.remove('active');
   fullTab.classList.add('active');
 }
 

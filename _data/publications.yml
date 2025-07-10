@@ -11,3 +11,4 @@ main:
     # notes: Oral Presentation
     image: ./assets/img/flex_main_fig.png
     selected: true
+    preprint: true
