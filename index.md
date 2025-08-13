@@ -6,6 +6,8 @@ layout: homepage
 
 I am an incoming Master student (2025-2028) at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University (ShanghaiTech)</a> advised by <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Prof. Jingya Wang</a>, jointly with <a href="https://shiye21.github.io/">Prof. Ye Shi</a> in Shanghai, China. Prior to this, I received my Bachelor degree from <a href="https://english.whut.edu.cn">WHUT</a>.
 
+**Currently, I’m primarily working on VLA. If you share any similar interests, feel free to email me to discuss ideas and potential collaborations.**
+
 ## Research Interests
 
 My main area of interest focuses on <strong>foundation models</strong>.
@@ -13,11 +15,9 @@ My main area of interest focuses on <strong>foundation models</strong>.
 - **Large Language Model:** reinforment learning from human feedback (RLHF)
 - **Vision Language Action Model:** post-training for VLAs
 
-Currently, I’m primarily working on VLA. If you share any similar interests, feel free to email me to discuss ideas and potential collaborations.
-
 ## News
 
-- **[Jun. 2025]** I graduate from WHUT as an outstanding graduate.
+- **[Jun. 2025]** 🎉I graduate from WHUT as an outstanding graduate.
 
 {% include_relative _includes/publications.md %}
 
@@ -44,4 +44,4 @@ Currently, I’m primarily working on VLA. If you share any similar interests, f
   - 2021.09-2025.06
 
 
-
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=mL8Djil02w1zmyxacyi4PK4CaAC5ansIEoIkHGaRIjQ&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
