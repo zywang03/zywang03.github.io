@@ -40,7 +40,7 @@ Currently, I’m primarily working on VLA. If you share any similar interests, f
   - 2025.09 - Present
 
 - Wuhan University of Technology, China
-  - B.Eng in Computer Science and Technology
+  - B.Eng in Software Engineering
   - 2021.09-2025.06
 
 
