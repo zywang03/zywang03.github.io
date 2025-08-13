@@ -44,4 +44,4 @@ My main area of interest focuses on <strong>foundation models</strong>.
   - 2021.09-2025.06
 
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=mL8Djil02w1zmyxacyi4PK4CaAC5ansIEoIkHGaRIjQ&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=mL8Djil02w1zmyxacyi4PK4CaAC5ansIEoIkHGaRIjQ'></script>
