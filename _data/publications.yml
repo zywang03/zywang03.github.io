@@ -1,7 +1,7 @@
 main:
 
   - title: "FLEX: Personalized Federated Learning for Mixture-of-Experts LLMS via Expert Grafting"
-    authors: Fan Liu, Bikang Pan, <strong>Zhongyi Wang</strong>, Xi Yao, Xiaoying Tang, Jingya Wang, Ye Shi
+    authors: Fan Liu*, Bikang Pan*, <strong>Zhongyi Wang</strong>, Xi Yao, Xiaoying Tang, Jingya Wang, Ye Shi
     conference_short: arXiv
     conference: arXiv preprint arXiv:2506.00965
     pdf: https://arxiv.org/pdf/2506.00965
