@@ -10,9 +10,9 @@ I am a Master student (2025-2028) at <a href="https://www.shanghaitech.edu.cn/en
 
 ## Research Interests
 
-My main area of interest focuses on <strong>robot learning</strong> and <strong>foundation models</strong>.
+My main area of interests focuses on <strong>robot learning</strong> and <strong>foundation models</strong>.
 
-- **Real-World Robot Learning Systems:** real-world learning based on VLAs
+- **Real-World Robot Learning System:** real-world learning based on VLAs
 - **Vision Language Action Model:** post-training for VLAs
 - **Large Language Model:** reinforment learning from human feedback (RLHF)
 
