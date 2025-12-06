@@ -1,6 +1,6 @@
 main:
 
-  - title: "Unlocking Personalized Knowledge in Federated Large Language Model: The Power of Mixture of Experts"
+  - title: "FLEX: Personalized Federated Learning for Mixture-of-Experts LLMS via Expert Grafting"
     authors: Fan Liu, Bikang Pan, <strong>Zhongyi Wang</strong>, Xi Yao, Xiaoying Tang, Jingya Wang, Ye Shi
     conference_short: arXiv
     conference: arXiv preprint arXiv:2506.00965

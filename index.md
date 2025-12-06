@@ -4,16 +4,17 @@ layout: homepage
 
 ## About Me
 
-I am an incoming Master student (2025-2028) at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University (ShanghaiTech)</a> advised by <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Prof. Jingya Wang</a>, jointly with <a href="https://shiye21.github.io/">Prof. Ye Shi</a> in Shanghai, China. Prior to this, I received my Bachelor degree from <a href="https://english.whut.edu.cn">WHUT</a>.
+I am a Master student (2025-2028) at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University (ShanghaiTech)</a> advised by <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Prof. Jingya Wang</a>, jointly with <a href="https://shiye21.github.io/">Prof. Ye Shi</a> in Shanghai, China. Prior to this, I received my Bachelor degree from <a href="https://english.whut.edu.cn">WHUT</a>.
 
-**Currently, I’m primarily working on VLA. If you share any similar interests, feel free to email me to discuss ideas and potential collaborations.**
+**Currently, I’m primarily working on VLA and real-world robot learning systems. If you share any similar interests, feel free to email me to discuss ideas and potential collaborations.**
 
 ## Research Interests
 
-My main area of interest focuses on <strong>foundation models</strong>.
+My main area of interest focuses on <strong>robot learning</strong> and <strong>foundation models</strong>.
 
-- **Large Language Model:** reinforment learning from human feedback (RLHF)
+- **Real-World Robot Learning Systems:** real-world learning based on VLAs
 - **Vision Language Action Model:** post-training for VLAs
+- **Large Language Model:** reinforment learning from human feedback (RLHF)
 
 ## News
 
