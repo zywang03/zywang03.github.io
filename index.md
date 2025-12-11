@@ -27,7 +27,7 @@ My main area of interests focuses on <strong>robot learning</strong> and <strong
 ## Honors and Awards
 
  - 2025.06 <strong>Distinguished Undergraduate Thesis (Top 3%) / Outstanding Graduate</strong>, WHUT
- - 2025 <strong>National Scholarship</strong>, Ministry of Education, China (Highest Honor for Undergraduates)
+ - 2025 <strong>National Scholarship</strong>, Ministry of Education, China (Highest Government Honor for Undergraduates)
  - 2023 <strong>National First Prize</strong>, China Undergraduate Mathematical Contest in Modeling (CUMCM), WHUT
  - 2023 <strong>National Third Prize</strong>, Competition of Service Outsourcing and Entrepreneurship Innovation, WHUT
  - 2021-2023 <strong>National Encouragement Scholarship</strong>, WHUT
