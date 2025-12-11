@@ -18,7 +18,7 @@ My main area of interests focuses on <strong>robot learning</strong> and <strong
 
 ## News
 
-- **[Jun. 2025]** 🎉I graduate from WHUT as an outstanding graduate.
+- **[Jun. 2025]** 🎉 I graduate from <a href="https://english.whut.edu.cn">WHUT</a> as an outstanding graduate.
 
 {% include_relative _includes/publications.md %}
 
@@ -26,23 +26,25 @@ My main area of interests focuses on <strong>robot learning</strong> and <strong
 
 ## Honors and Awards
 
- - 2025.06 Outstanding Graduate / Distinguished Undergraduate Thesis (3%), WHUT
- - 2025 National Scholarship, Ministry of Education, China, WHUT
- - 2023 China Undergraduate Mathematical Contest in Modeling (CUMCM), National First Prize
- - 2023 Competition of Service Outsourcing and Entrepreneurship Innovation, National Third Prize
- - 2021-2023 National Encouragement Scholarship, WHUT
- - 2021-2024 Merit Student Award at the school level, WHUT
+ - 2025.06 <strong>Distinguished Undergraduate Thesis (Top 3%) / Outstanding Graduate</strong>, WHUT
+ - 2025 <strong>National Scholarship</strong>, Ministry of Education, China (Highest Honor for Undergraduates)
+ - 2023 <strong>National First Prize</strong>, China Undergraduate Mathematical Contest in Modeling (CUMCM), WHUT
+ - 2023 <strong>National Third Prize</strong>, Competition of Service Outsourcing and Entrepreneurship Innovation, WHUT
+ - 2021-2023 <strong>National Encouragement Scholarship</strong>, WHUT
+ - 2021-2024 <strong>Merit Student Award at the school level</strong>, WHUT
 
 
 ## Education
 
 - ShanghaiTech University, China
-  - Master's in Computer Science and Engineering
+  - M.Eng. in Computer Science and Engineering
   - 2025.09 - Present
+  - Expected Graduation: 2028.06
 
 - Wuhan University of Technology, China
-  - B.Eng in Software Engineering
-  - 2021.09-2025.06
+  - B.Eng. in Software Engineering
+  - 2021.09 - 2025.06
+  - GPA: 4.18/5.0
 
 
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=mL8Djil02w1zmyxacyi4PK4CaAC5ansIEoIkHGaRIjQ'></script>
