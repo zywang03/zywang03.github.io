@@ -158,6 +158,18 @@ papertitle {
     font-size: 100%;
   }
 
+.date-tag {
+  display: inline-block;
+  padding: 0.05em 0.45em;
+  margin-right: 0.35em;
+  border-radius: 999px;
+  background-color: #e6f3ff;
+  color: #043361;
+  font-weight: 600;
+  font-size: 90%;
+  white-space: nowrap;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #20212b;
@@ -178,6 +190,11 @@ papertitle {
 
     papertitle {
     color:#eeeff0;
+    }
+
+    .date-tag {
+      background-color: rgba(62, 183, 240, 0.15);
+      color: rgb(62, 183, 240);
     }
 
 }

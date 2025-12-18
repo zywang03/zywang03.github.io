@@ -18,7 +18,7 @@ My main area of interests focuses on <strong>robot learning</strong> and <strong
 
 ## News
 
-- **[Jun. 2025]** 🎉 I graduate from <a href="https://english.whut.edu.cn">WHUT</a> as an outstanding graduate.
+- <span class="date-tag">2025.06</span> 🎉 I graduate from <a href="https://english.whut.edu.cn">WHUT</a> as an outstanding graduate.
 
 {% include_relative _includes/publications.md %}
 
@@ -26,12 +26,12 @@ My main area of interests focuses on <strong>robot learning</strong> and <strong
 
 ## Honors and Awards
 
- - 2025.06 <strong>Distinguished Undergraduate Thesis (Top 3%) / Outstanding Graduate</strong>, WHUT
- - 2025 <strong>National Scholarship</strong>, Ministry of Education, China (Highest Government Honor for Undergraduates)
- - 2023 <strong>National First Prize</strong>, China Undergraduate Mathematical Contest in Modeling (CUMCM), WHUT
- - 2023 <strong>National Third Prize</strong>, Competition of Service Outsourcing and Entrepreneurship Innovation, WHUT
- - 2021-2023 <strong>National Encouragement Scholarship</strong>, WHUT
- - 2021-2024 <strong>Merit Student Award at the school level</strong>, WHUT
+- <span class="date-tag">2025.06</span> <strong>Distinguished Undergraduate Thesis (Top 3%) / Outstanding Graduate</strong>, WHUT
+- <span class="date-tag">2024.11</span> <strong>National Scholarship</strong>, Ministry of Education, China (Highest Government Honor for Undergraduates)
+- <span class="date-tag">2023.09</span> <strong>National First Prize</strong>, China Undergraduate Mathematical Contest in Modeling (CUMCM), WHUT
+- <span class="date-tag">2023.07</span> <strong>National Third Prize</strong>, Competition of Service Outsourcing and Entrepreneurship Innovation, WHUT
+- <span class="date-tag">2023.11</span> <strong>National Encouragement Scholarship</strong> for 2021-2023, WHUT
+- <span class="date-tag">2024.11</span> <strong>Merit Student Award at the school level</strong> for 2021-2024, WHUT
 
 
 ## Education
