@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Master student (2025-2028) at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University (ShanghaiTech)</a> advised by <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Prof. Jingya Wang</a>, jointly with <a href="https://shiye21.github.io/">Prof. Ye Shi</a> in Shanghai, China. Prior to this, I received my Bachelor degree from <a href="https://english.whut.edu.cn">WHUT</a>.
+Hello, I am <span class="date-tag">Zhongyi Wang</span>, a master student (2025-2028) in the Visual & Data Intelligence (<a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">VDI</a>) Center, ViHumanLab at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University (ShanghaiTech)</a>, advised by <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Prof. Jingya Wang</a>, jointly with <a href="https://shiye21.github.io/">Prof. Ye Shi</a> in Shanghai, China. Prior to this, I received my Bachelor degree from <a href="https://english.whut.edu.cn">WHUT</a>.
 
 **Currently, I’m primarily working on VLA and real-world robot learning systems. If you share any similar interests, feel free to email me to discuss ideas and potential collaborations.**
 
