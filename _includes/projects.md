@@ -1,3 +1,4 @@
+<div id="projects-section">
 <h2 id="projects" style="margin: 2px 0px 10px;">Projects</h2>
 
 {% assign projects = site.data.projects.main %}
@@ -28,10 +29,12 @@
   <p class="project-empty">Add entries in <code>_data/projects.yml</code> to show project cards here.</p>
 {% endif %}
 </div>
+</div>
 
 <style>
 .projects-list {
   margin-top: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .project-card {
@@ -41,6 +44,10 @@
 
 .project-card:not(:last-child) {
   margin-bottom: 2rem;
+}
+
+.project-card:last-child .project-thumb {
+  margin-bottom: 0;
 }
 
 .project-media {
