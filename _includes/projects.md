@@ -128,8 +128,8 @@
     box-sizing: border-box;
     width: auto;
     max-width: 100%;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
     margin-bottom: 0.5rem;
   }
 
@@ -137,8 +137,8 @@
     box-sizing: border-box;
     width: 100%;
     max-width: 100%;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .project-thumb {
