@@ -124,6 +124,7 @@
 
   .project-media {
     width: auto;
+    margin-bottom: 0.5rem;
   }
 
   .project-thumb {
