@@ -36,7 +36,7 @@
 
 .project-card {
   display: grid;
-  grid-template-columns: minmax(220px, 270px) 1fr;
+  grid-template-columns: 285px 1fr;
   gap: 1.5rem;
   align-items: start;
 }
@@ -46,16 +46,19 @@
 }
 
 .project-media {
-  width: 100%;
+  width: 285px;
 }
 
 .project-thumb {
   display: block;
-  width: 100%;
+  width: 270px;
   height: 123px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 3px 3px 6px #888;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
 }
 
 .project-title {
@@ -106,9 +109,16 @@
     gap: 1rem;
   }
 
+  .project-media {
+    width: 100%;
+    max-width: 285px;
+  }
+
   .project-thumb {
+    width: 100%;
     height: auto;
     aspect-ratio: 270 / 123;
+    margin-left: 0;
   }
 }
 </style>
