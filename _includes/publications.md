@@ -1,26 +1,35 @@
+{% assign publications = site.data.publications.main %}
+{% assign selected_publications = publications | where: "selected", true %}
+{% if selected_publications.size > 0 %}
+{% assign default_publication_view = "selected" %}
+{% else %}
+{% assign default_publication_view = "full" %}
+{% endif %}
+{% if default_publication_view == "selected" %}
+{% assign initial_visible_publication_count = selected_publications.size %}
+{% else %}
+{% assign initial_visible_publication_count = publications.size %}
+{% endif %}
+
 <div id="publications-section">
 <h2 id="publications" style="margin: 2px 0px 10px;">Publications</h2>
 
 <div class="publication-filter">
-  <span id="selectedBtn" class="filter-tab active" onclick="showSelected()">Selected</span>
-  <span id="preprintBtn" class="filter-tab" onclick="showPreprints()">Preprints</span>
-  <span id="fullBtn" class="filter-tab" onclick="showFull()">Full</span>
+  <span id="selectedBtn" class="filter-tab{% if default_publication_view == "selected" %} active{% endif %}" onclick="showSelected()">Selected</span>
+  <span id="preprintBtn" class="filter-tab{% if default_publication_view == "preprint" %} active{% endif %}" onclick="showPreprints()">Preprints</span>
+  <span id="fullBtn" class="filter-tab{% if default_publication_view == "full" %} active{% endif %}" onclick="showFull()">Full</span>
 </div>
 
 <div class="publications">
 <ol class="bibliography">
 
-{% for link in site.data.publications.main %}
-
-<!-- <li class="publication-item {% if link.selected %}selected-publication{% else %}non-selected-publication{% endif %}"> -->
-<li class="publication-item 
-  {% if link.selected %}selected-publication{% else %}non-selected-publication{% endif %} 
-  {% if link.preprint %}preprint-publication{% else %}non-preprint-publication{% endif %}">
+{% for link in publications %}
+<li class="publication-item {% if link.selected %}selected-publication{% else %}non-selected-publication{% endif %} {% if link.preprint %}preprint-publication{% else %}non-preprint-publication{% endif %}{% if default_publication_view == "selected" and link.selected != true %} hidden{% endif %}">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
+    {% if link.image %}
     <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
-    {% if link.conference_short %} 
+    {% if link.conference_short %}
     <abbr class="badge">{{ link.conference_short }}</abbr>
     {% endif %}
     {% endif %}
@@ -28,38 +37,37 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
       <div class="author">{{ link.authors }}</div>
-      <div class="periodical"><em>{{ link.conference }}</em>
-      </div>
+      <div class="periodical"><em>{{ link.conference }}</em></div>
     <div class="links">
-      {% if link.pdf %} 
+      {% if link.pdf %}
       <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:14px;">Paper</a>
       {% endif %}
-      {% if link.code %} 
+      {% if link.code %}
       <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:14px;">Code</a>
       {% endif %}
-      {% if link.page %} 
+      {% if link.page %}
       <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:14px;">Homepage</a>
       {% endif %}
-      {% if link.twitter %} 
+      {% if link.twitter %}
       <a href="{{ link.twitter }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:14px;">Twitter</a>
       {% endif %}
-      {% if link.bibtex %} 
+      {% if link.bibtex %}
       <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:14px;">BibTex</a>
       {% endif %}
-      {% if link.notes %} 
+      {% if link.notes %}
       <strong> <i style="color:#e74d3c"><b>{{ link.notes }}</b></i></strong>
       {% endif %}
-      {% if link.others %} 
+      {% if link.others %}
       {{ link.others }}
       {% endif %}
     </div>
   </div>
 </div>
 </li>
-
 {% endfor %}
 
 </ol>
+<p id="publicationEmptyState" class="publication-empty-state{% if initial_visible_publication_count > 0 %} hidden{% endif %}">Nothing here for now.</p>
 </div>
 </div>
 
@@ -100,15 +108,15 @@
   .publication-filter {
     border-bottom-color: #404040;
   }
-  
+
   .filter-tab:not(.active) {
     color: #999999;
   }
-  
+
   .filter-tab:not(.active):hover {
     color: rgb(36, 150, 203);
   }
-  
+
   .filter-tab.active {
     color: rgb(36, 150, 203);
     border-bottom-color: rgb(36, 150, 203);
@@ -126,94 +134,90 @@
 .publication-item.hidden {
   display: none;
 }
+
+.publication-empty-state {
+  color: var(--global-text-color-light, #828282);
+  margin-top: 0.25rem;
+}
+
+.publication-empty-state.hidden {
+  display: none;
+}
 </style>
 
 <script>
-function showSelected() {
+function updatePublicationEmptyState(publicationsSection) {
+  const emptyState = document.getElementById('publicationEmptyState');
+  if (!emptyState) {
+    return;
+  }
+
+  const visibleCount = publicationsSection.querySelectorAll('.publication-item:not(.hidden)').length;
+  emptyState.classList.toggle('hidden', visibleCount > 0);
+}
+
+function setPublicationView(view) {
   const publicationsSection = document.getElementById('publications-section');
   if (!publicationsSection) {
     return;
   }
+
   const selectedTab = document.getElementById('selectedBtn');
   const preprintTab = document.getElementById('preprintBtn');
   const fullTab = document.getElementById('fullBtn');
   const allPublications = publicationsSection.querySelectorAll('.publication-item');
   const selected = publicationsSection.querySelectorAll('.selected-publication');
-  
-  // // 隐藏非精选论文
-  // nonSelectedPublications.forEach(item => {
-  //   item.classList.add('hidden');
-  // });
-  // 隐藏所有项
-  allPublications.forEach(item => {
-    item.classList.add('hidden');
-  });
+  const preprints = publicationsSection.querySelectorAll('.preprint-publication');
 
-  // 显示 精选 的项
-  selected.forEach(item => {
+  allPublications.forEach(item => {
     item.classList.remove('hidden');
   });
-  
-  // 更新tab状态
-  selectedTab.classList.add('active');
+
+  selectedTab.classList.remove('active');
   preprintTab.classList.remove('active');
   fullTab.classList.remove('active');
+
+  if (view === 'selected') {
+    allPublications.forEach(item => {
+      item.classList.add('hidden');
+    });
+
+    selected.forEach(item => {
+      item.classList.remove('hidden');
+    });
+
+    selectedTab.classList.add('active');
+    updatePublicationEmptyState(publicationsSection);
+    return;
+  }
+
+  if (view === 'preprint') {
+    allPublications.forEach(item => {
+      item.classList.add('hidden');
+    });
+
+    preprints.forEach(item => {
+      item.classList.remove('hidden');
+    });
+
+    preprintTab.classList.add('active');
+    updatePublicationEmptyState(publicationsSection);
+    return;
+  }
+
+  fullTab.classList.add('active');
+  updatePublicationEmptyState(publicationsSection);
+}
+
+function showSelected() {
+  setPublicationView('selected');
 }
 
 function showPreprints() {
-  const publicationsSection = document.getElementById('publications-section');
-  if (!publicationsSection) {
-    return;
-  }
-  const selectedTab = document.getElementById('selectedBtn');
-  const preprintTab = document.getElementById('preprintBtn');
-  const fullTab = document.getElementById('fullBtn');
-
-  const allPublications = publicationsSection.querySelectorAll('.publication-item');
-  const preprints = publicationsSection.querySelectorAll('.preprint-publication');
-
-  // 隐藏所有项
-  allPublications.forEach(item => {
-    item.classList.add('hidden');
-  });
-
-  // 显示 preprint 的项
-  preprints.forEach(item => {
-    item.classList.remove('hidden');
-  });
-
-  // 更新 tab 状态
-  selectedTab.classList.remove('active');
-  preprintTab.classList.add('active');
-  fullTab.classList.remove('active');
+  setPublicationView('preprint');
 }
 
 function showFull() {
-  const publicationsSection = document.getElementById('publications-section');
-  if (!publicationsSection) {
-    return;
-  }
-  const selectedTab = document.getElementById('selectedBtn');
-  const preprintTab = document.getElementById('preprintBtn');
-  const fullTab = document.getElementById('fullBtn');
-  const allPublications = publicationsSection.querySelectorAll('.publication-item');
-  
-  // 显示所有论文
-  // nonSelectedPublications.forEach(item => {
-  //   item.classList.remove('hidden');
-  // });
-  allPublications.forEach(item => {
-    item.classList.remove('hidden');
-  });
-  
-  // 更新tab状态
-  selectedTab.classList.remove('active');
-  preprintTab.classList.remove('active');
-  fullTab.classList.add('active');
+  setPublicationView('full');
 }
-
-// 页面加载完成后默认显示精选论文
-document.addEventListener('DOMContentLoaded', function() {
-  showSelected();
-});
 </script>

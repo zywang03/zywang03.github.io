@@ -35,10 +35,8 @@
 }
 
 .project-card {
-  display: grid;
-  grid-template-columns: 285px 1fr;
-  gap: 1.5rem;
-  align-items: start;
+  display: flex;
+  align-items: center;
 }
 
 .project-card:not(:last-child) {
@@ -46,7 +44,10 @@
 }
 
 .project-media {
-  width: 285px;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 auto;
 }
 
 .project-thumb {
@@ -59,6 +60,12 @@
   margin-top: 5px;
   margin-left: 5px;
   margin-bottom: 5px;
+}
+
+.project-content {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 20px;
 }
 
 .project-title {
@@ -105,20 +112,17 @@
 
 @media screen and (max-width: 768px) {
   .project-card {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    display: block;
   }
 
   .project-media {
-    width: 100%;
-    max-width: 285px;
+    width: auto;
   }
 
   .project-thumb {
-    width: 100%;
+    width: 270px;
     height: auto;
     aspect-ratio: 270 / 123;
-    margin-left: 0;
   }
 }
 </style>
