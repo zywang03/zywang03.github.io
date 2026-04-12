@@ -1,15 +1,7 @@
 {% assign publications = site.data.publications.main %}
 {% assign selected_publications = publications | where: "selected", true %}
-{% if selected_publications.size > 0 %}
 {% assign default_publication_view = "selected" %}
-{% else %}
-{% assign default_publication_view = "full" %}
-{% endif %}
-{% if default_publication_view == "selected" %}
 {% assign initial_visible_publication_count = selected_publications.size %}
-{% else %}
-{% assign initial_visible_publication_count = publications.size %}
-{% endif %}
 
 <div id="publications-section">
 <h2 id="publications" style="margin: 2px 0px 10px;">Publications</h2>
@@ -73,10 +65,14 @@
 
 <style>
 .publication-filter {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   border-bottom: 1px solid #e8e8e8;
   display: flex;
   gap: 0;
+}
+
+#publications-section .publications {
+  margin-top: 0.5rem;
 }
 
 .filter-tab {
