@@ -146,8 +146,8 @@
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
   }
 
   .publications ol.bibliography li .abbr {
