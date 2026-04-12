@@ -13,13 +13,18 @@
     </div>
     {% endif %}
     <div class="project-content">
-      <h3 class="project-title">{{ project.title }}</h3>
+      <div class="project-title">{{ project.title }}</div>
       {% if project.description %}
-      <p class="project-description">{{ project.description }}</p>
+      <div class="project-description">{{ project.description }}</div>
       {% endif %}
-      {% if project.code %}
-      <div class="project-actions">
-        <a href="{{ project.code }}" class="project-btn" target="_blank" rel="noopener">Code</a>
+      {% if project.code or project.page %}
+      <div class="project-links">
+        {% if project.code %}
+        <a href="{{ project.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener" style="font-size:14px;">Code</a>
+        {% endif %}
+        {% if project.page %}
+        <a href="{{ project.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener" style="font-size:14px;">Homepage</a>
+        {% endif %}
       </div>
       {% endif %}
     </div>
@@ -33,21 +38,18 @@
 
 <style>
 .projects-list {
-  margin-top: 1.25rem;
+  margin-top: 0.5rem;
   margin-bottom: 20px;
 }
 
 .project-card {
   display: flex;
   align-items: center;
+  min-height: 110px;
 }
 
 .project-card:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.project-card:last-child .project-thumb {
-  margin-bottom: 0;
+  margin-bottom: 2.5rem;
 }
 
 .project-media {
@@ -76,30 +78,30 @@
 }
 
 .project-title {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: bolder;
 }
 
 .project-description {
-  margin: 0;
-  line-height: 1.6;
+  margin-top: 0.15rem;
+  line-height: 1.4em;
 }
 
-.project-actions {
-  margin-top: 0.9rem;
+.project-links {
+  margin-top: 0.35rem;
 }
 
-.project-btn {
+.project-links a.btn {
   display: inline-block;
   color: #000000;
   border: 1px solid #000000;
-  padding: 0.15rem 0.6rem;
-  font-size: 14px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
   text-decoration: none;
 }
 
-.project-btn:hover {
+.project-links a.btn:hover {
   color: var(--global-theme-color);
   border-color: var(--global-theme-color);
   text-decoration: none;
@@ -111,13 +113,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .project-btn {
+  .project-links a.btn {
     color: #FFFFFF;
     border-color: #FFFFFF;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media print, screen and (max-width: 480px) {
   .project-card {
     display: block;
   }
