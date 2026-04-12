@@ -12,9 +12,8 @@ Hello, I am <span class="date-tag">Zhongyi Wang</span>, a master student (2025-2
 
 My main area of interests focuses on <strong>robot learning</strong> and <strong>foundation models</strong>.
 
-- **Real-World Robot Learning System:** real-world learning based on VLAs
-- **Vision Language Action Model:** post-training for VLAs
-- **Large Language Model:** reinforment learning from human feedback (RLHF)
+- **Robotic Foundation Model:** RL post-training for Robotic Foundation Models
+- **Real-World Robot Learning System:** real-world learning based on Robotic Foundation Models
 
 ## News
 
