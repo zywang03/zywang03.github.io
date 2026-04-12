@@ -139,6 +139,32 @@
 .publication-empty-state.hidden {
   display: none;
 }
+
+@media print, screen and (max-width: 480px) {
+  .pub-row > .abbr,
+  .pub-row > .col-sm-9 {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .publications ol.bibliography li .abbr {
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .publications ol.bibliography li .teaser {
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    aspect-ratio: 270 / 123;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 </style>
 
 <script>

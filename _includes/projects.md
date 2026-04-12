@@ -125,14 +125,29 @@
   }
 
   .project-media {
+    box-sizing: border-box;
     width: auto;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 0.5rem;
   }
 
+  .project-content {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .project-thumb {
-    width: 270px;
+    width: 100%;
+    max-width: 270px;
     height: auto;
     aspect-ratio: 270 / 123;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 </style>
