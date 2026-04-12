@@ -1,50 +1,114 @@
 <h2 id="projects" style="margin: 2px 0px 10px;">Projects</h2>
 
-<div class="publications">
-<ol class="bibliography">
-
 {% assign projects = site.data.projects.main %}
+
+<div class="projects-list">
 {% if projects and projects.size > 0 %}
 {% for project in projects %}
-
-<li class="publication-item">
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+  <article class="project-card">
     {% if project.image %}
-    <img src="{{ project.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+    <div class="project-media">
+      <img src="{{ project.image }}" alt="{{ project.title }} preview" class="project-thumb">
+    </div>
     {% endif %}
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title">{{ project.title }}</div>
-    {% if project.description %}
-    <div class="periodical"><em>{{ project.description }}</em></div>
-    {% endif %}
-    <div class="links">
+    <div class="project-content">
+      <h3 class="project-title">{{ project.title }}</h3>
+      {% if project.description %}
+      <p class="project-description">{{ project.description }}</p>
+      {% endif %}
       {% if project.code %}
-      <a href="{{ project.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:14px;">Code</a>
+      <div class="project-actions">
+        <a href="{{ project.code }}" class="project-btn" target="_blank" rel="noopener">Code</a>
+      </div>
       {% endif %}
     </div>
-  </div>
-</div>
-</li>
-
+  </article>
 {% endfor %}
 {% else %}
-<li class="publication-item">
-  <div class="pub-row">
-    <div class="col-sm-12" style="padding-right: 15px;padding-left: 20px;">
-      <div class="periodical project-empty">Add entries in <code>_data/projects.yml</code> to show project cards here.</div>
-    </div>
-  </div>
-</li>
+  <p class="project-empty">Add entries in <code>_data/projects.yml</code> to show project cards here.</p>
 {% endif %}
-
-</ol>
 </div>
 
 <style>
+.projects-list {
+  margin-top: 1.25rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 270px) 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.project-card:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.project-media {
+  width: 100%;
+}
+
+.project-thumb {
+  display: block;
+  width: 100%;
+  height: 123px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px #888;
+}
+
+.project-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.project-description {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.project-actions {
+  margin-top: 0.9rem;
+}
+
+.project-btn {
+  display: inline-block;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 0.15rem 0.6rem;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.project-btn:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  text-decoration: none;
+}
+
 .project-empty {
   color: var(--global-text-color-light, #828282);
   margin-top: 0.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .project-btn {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-thumb {
+    height: auto;
+    aspect-ratio: 270 / 123;
+  }
 }
 </style>

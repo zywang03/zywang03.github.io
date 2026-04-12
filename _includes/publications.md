@@ -1,3 +1,4 @@
+<div id="publications-section">
 <h2 id="publications" style="margin: 2px 0px 10px;">Publications</h2>
 
 <div class="publication-filter">
@@ -59,6 +60,7 @@
 {% endfor %}
 
 </ol>
+</div>
 </div>
 
 <style>
@@ -128,12 +130,15 @@
 
 <script>
 function showSelected() {
+  const publicationsSection = document.getElementById('publications-section');
+  if (!publicationsSection) {
+    return;
+  }
   const selectedTab = document.getElementById('selectedBtn');
   const preprintTab = document.getElementById('preprintBtn');
   const fullTab = document.getElementById('fullBtn');
-  // const nonSelectedPublications = document.querySelectorAll('.non-selected-publication');
-  const allPublications = document.querySelectorAll('.publication-item');
-  const selected = document.querySelectorAll('.selected-publication');
+  const allPublications = publicationsSection.querySelectorAll('.publication-item');
+  const selected = publicationsSection.querySelectorAll('.selected-publication');
   
   // // 隐藏非精选论文
   // nonSelectedPublications.forEach(item => {
@@ -156,12 +161,16 @@ function showSelected() {
 }
 
 function showPreprints() {
+  const publicationsSection = document.getElementById('publications-section');
+  if (!publicationsSection) {
+    return;
+  }
   const selectedTab = document.getElementById('selectedBtn');
   const preprintTab = document.getElementById('preprintBtn');
   const fullTab = document.getElementById('fullBtn');
 
-  const allPublications = document.querySelectorAll('.publication-item');
-  const preprints = document.querySelectorAll('.preprint-publication');
+  const allPublications = publicationsSection.querySelectorAll('.publication-item');
+  const preprints = publicationsSection.querySelectorAll('.preprint-publication');
 
   // 隐藏所有项
   allPublications.forEach(item => {
@@ -180,11 +189,14 @@ function showPreprints() {
 }
 
 function showFull() {
+  const publicationsSection = document.getElementById('publications-section');
+  if (!publicationsSection) {
+    return;
+  }
   const selectedTab = document.getElementById('selectedBtn');
   const preprintTab = document.getElementById('preprintBtn');
   const fullTab = document.getElementById('fullBtn');
-  // const nonSelectedPublications = document.querySelectorAll('.non-selected-publication');
-  const allPublications = document.querySelectorAll('.publication-item');
+  const allPublications = publicationsSection.querySelectorAll('.publication-item');
   
   // 显示所有论文
   // nonSelectedPublications.forEach(item => {
