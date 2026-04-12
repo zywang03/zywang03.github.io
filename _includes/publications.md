@@ -18,7 +18,7 @@
 {% for link in publications %}
 <li class="publication-item {% if link.selected %}selected-publication{% else %}non-selected-publication{% endif %} {% if link.preprint %}preprint-publication{% else %}non-preprint-publication{% endif %}{% if default_publication_view == "selected" and link.selected != true %} hidden{% endif %}">
 <div class="pub-row">
-  <div class="publication-media abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
     {% if link.image %}
     <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
     {% if link.conference_short %}
@@ -26,7 +26,7 @@
     {% endif %}
     {% endif %}
   </div>
-  <div class="publication-content" style="position: relative;padding-right: 15px;padding-left: 20px;">
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
       <div class="author">{{ link.authors }}</div>
       <div class="periodical"><em>{{ link.conference }}</em></div>
@@ -127,15 +127,6 @@
   margin-bottom: 2.5rem;
 }
 
-.publication-media {
-  flex: 0 0 auto;
-}
-
-.publication-content {
-  flex: 1 1 0;
-  min-width: 0;
-}
-
 .publication-item.hidden {
   display: none;
 }
@@ -147,13 +138,6 @@
 
 .publication-empty-state.hidden {
   display: none;
-}
-
-@media print, screen and (max-width: 480px) {
-  .publication-media,
-  .publication-content {
-    display: block;
-  }
 }
 </style>
 

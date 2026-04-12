@@ -47,7 +47,6 @@
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 auto;
 }
 
 .project-thumb {
@@ -66,6 +65,7 @@
   position: relative;
   padding-right: 15px;
   padding-left: 20px;
+  width: 100%;
 }
 
 .project-title {
