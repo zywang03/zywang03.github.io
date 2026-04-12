@@ -22,6 +22,8 @@ My main area of interests focuses on <strong>robot learning</strong> and <strong
 
 {% include_relative _includes/publications.md %}
 
+{% include_relative _includes/projects.md %}
+
 <!-- {% include_relative _includes/services.md %} -->
 
 ## Honors and Awards
