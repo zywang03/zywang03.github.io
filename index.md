@@ -29,12 +29,7 @@ My main area of interests focuses on <strong>robot learning</strong> and <strong
 
 - <span class="date-tag">2025.06</span> <strong>Distinguished Undergraduate Thesis (Top 3%) / Outstanding Graduate</strong>, WHUT
 - <span class="date-tag">2024.11</span> <strong>National Scholarship</strong>, Ministry of Education, China (Highest Government Honor for Undergraduates)
-- <span class="date-tag">2023.09</span> <strong>National First Prize</strong>, China Undergraduate Mathematical Contest in Modeling (CUMCM), China Society for Industrial and Applied Mathematics <a href="/assets/files/2023CUMCM.pdf" target="_blank">paper</a>
-<!--
-- <span class="date-tag">2023.07</span> <strong>National Third Prize</strong>, Competition of Service Outsourcing and Entrepreneurship Innovation, WHUT
-- <span class="date-tag">2023.11</span> <strong>National Encouragement Scholarship</strong> for 2021-2023, WHUT
-- <span class="date-tag">2024.11</span> <strong>Merit Student Award at the school level</strong> for 2021-2024, WHUT
--->
+- <span class="date-tag">2023.09</span> <strong>National First Prize</strong>, China Undergraduate Mathematical Contest in Modeling (CUMCM), China Society for Industrial and Applied Mathematics <a href="/assets/files/2023CUMCM.pdf" target="_blank">pdf</a>
 
 
 ## Education
