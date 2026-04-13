@@ -6,11 +6,9 @@ layout: homepage
 
 Hello, I am <span class="date-tag">Zhongyi Wang</span>, a master student (2025-2028) in the Visual & Data Intelligence (<a href="https://vdi.sist.shanghaitech.edu.cn/">VDI</a>) Center, ViHumanLab at ShanghaiTech University (<a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech</a>), advised by <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Prof. Jingya Wang</a>, jointly with <a href="https://shiye21.github.io/">Prof. Ye Shi</a> in Shanghai, China. Prior to this, I received my Bachelor degree from <a href="https://english.whut.edu.cn">WHUT</a>.
 
-**Currently, I’m primarily working on VLA and real-world robot learning systems. If you share any similar interests, feel free to email me to discuss ideas and potential collaborations.**
-
 ## Research Interests
 
-My main area of interests focuses on <strong>robot learning</strong> and <strong>foundation models</strong>.
+My main area of interests focuses on <strong>robot learning</strong> and <strong>robotic foundation models</strong>.
 
 - **Robotic Foundation Model:** RL post-training for Robotic Foundation Models
 - **Real-World Robot Learning System:** real-world learning based on Robotic Foundation Models
