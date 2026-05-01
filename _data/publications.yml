@@ -2,8 +2,8 @@ main:
 
   - title: "Sample from What You See: Visuomotor Policy Learning via Diffusion Bridge with Observation-Embedded Stochastic Differential Equation"
     authors: Zhaoyang Liu, Mokai Pan, <strong>Zhongyi Wang</strong>, Kaizhen Zhu, Haotao Lu, Jingya Wang, Ye Shi
-    conference_short: arXiv
-    conference: arXiv preprint arXiv:2512.07212
+    conference_short: ICML 2026
+    conference: International Conference on Machine Learning 2026
     pdf: https://arxiv.org/pdf/2512.07212
     # code: https://anonymous.4open.science/r/FLEx-8F12/README.md
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
@@ -11,7 +11,7 @@ main:
     # notes: Oral Presentation
     image: ./assets/img/bridgepolicy_main_fig.png
     # selected: true
-    preprint: true
+    preprint: false
   
   - title: "FLEX: Personalized Federated Learning for Mixture-of-Experts LLMs via Expert Grafting"
     authors: Fan Liu*, Bikang Pan*, <strong>Zhongyi Wang</strong>, Xi Yao, Xiaoying Tang, Jingya Wang, Ye Shi
