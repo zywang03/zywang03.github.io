@@ -15,7 +15,8 @@ My main area of interests focuses on <strong>robot learning</strong> and <strong
 
 ## News
 
-- <span class="date-tag">2025.06</span> 🎉 I graduate from <a href="https://english.whut.edu.cn">WHUT</a> as an outstanding graduate.
+- <span class="date-tag">2026.05</span> Two papers accepted by ICML 2026.
+- <span class="date-tag">2025.06</span> I graduate from <a href="https://english.whut.edu.cn">WHUT</a> as an outstanding graduate.
 
 {% include_relative _includes/publications.md %}
 
