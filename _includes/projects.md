@@ -1,10 +1,10 @@
+{% assign projects = site.data.projects.main | where_exp: "project", "project.visible != false" %}
+
+{% if projects and projects.size > 0 %}
 <div id="projects-section">
 <h2 id="projects" style="margin: 2px 0px 10px;">Projects</h2>
 
-{% assign projects = site.data.projects.main %}
-
 <div class="projects-list">
-{% if projects and projects.size > 0 %}
 {% for project in projects %}
   <article class="project-card">
     {% if project.image %}
@@ -30,9 +30,6 @@
     </div>
   </article>
 {% endfor %}
-{% else %}
-  <p class="project-empty">Add entries in <code>_data/projects.yml</code> to show project cards here.</p>
-{% endif %}
 </div>
 </div>
 
@@ -107,11 +104,6 @@
   text-decoration: none;
 }
 
-.project-empty {
-  color: var(--global-text-color-light, #828282);
-  margin-top: 0.25rem;
-}
-
 @media (prefers-color-scheme: dark) {
   .project-links a.btn {
     color: #FFFFFF;
@@ -151,3 +143,4 @@
   }
 }
 </style>
+{% endif %}
