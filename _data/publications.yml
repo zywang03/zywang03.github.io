@@ -1,5 +1,18 @@
 main:
 
+  - title: "Sample-Efficient Diffusion-based Reinforcement Learning with Critic Guidance"
+    authors: Shutong Ding*, Zejia Zhong*, <strong>Zhongyi Wang</strong>, Ke Hu, Bikang Pan, Jingya Wang, Ye Shi
+    conference_short: ICML 2026
+    conference: The International Conference on Machine Learning, 2026
+    pdf: https://arxiv.org/pdf/2605.30056
+    # code: https://anonymous.4open.science/r/FLEx-8F12/README.md
+    page: https://dingsht.tech/cgpo-webpage/
+    # bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:3GMN2aeUkHoJ:scholar.google.com/&output=citation&scisdr=CgJEVzpKEJDS1KxPVOY:AAZF9b8AAAAAaG9JTOYXPrDQugCgGYORKuoQ6i0&scisig=AAZF9b8AAAAAaG9JTJJI-5miVt6h8cQVH-DDA20&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1
+    # notes: Oral Presentation
+    image: ./assets/img/cgpo_main_fig.jpg
+    selected: true
+    preprint: false
+
   - title: "Sample from What You See: Visuomotor Policy Learning via Diffusion Bridge with Observation-Embedded Stochastic Differential Equation"
     authors: Zhaoyang Liu, Mokai Pan, <strong>Zhongyi Wang</strong>, Kaizhen Zhu, Haotao Lu, Jingya Wang, Ye Shi
     conference_short: ICML 2026
@@ -23,5 +36,5 @@ main:
     bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:3GMN2aeUkHoJ:scholar.google.com/&output=citation&scisdr=CgJEVzpKEJDS1KxPVOY:AAZF9b8AAAAAaG9JTOYXPrDQugCgGYORKuoQ6i0&scisig=AAZF9b8AAAAAaG9JTJJI-5miVt6h8cQVH-DDA20&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1
     # notes: Oral Presentation
     image: ./assets/img/flex_main_fig.png
-    # selected: true
-    preprint: true
+    selected: true
+    # preprint: true
