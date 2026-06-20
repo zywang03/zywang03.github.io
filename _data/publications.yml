@@ -19,7 +19,7 @@ main:
     conference: The International Conference on Machine Learning, 2026
     pdf: https://arxiv.org/pdf/2512.07212
     # code: https://anonymous.4open.science/r/FLEx-8F12/README.md
-    # page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    page: https://jianghcsr.github.io/BridgePolicy_page/
     # bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:3GMN2aeUkHoJ:scholar.google.com/&output=citation&scisdr=CgJEVzpKEJDS1KxPVOY:AAZF9b8AAAAAaG9JTOYXPrDQugCgGYORKuoQ6i0&scisig=AAZF9b8AAAAAaG9JTJJI-5miVt6h8cQVH-DDA20&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1
     # notes: Oral Presentation
     image: ./assets/img/bridgepolicy_main_fig.png
