@@ -33,6 +33,15 @@
       }
      */
 
+.content-news {
+  margin-top: 0.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.updates-label {
+  margin-bottom: 0.35rem;
+}
+
 .icon-button{
   background-color:white;
   border-radius:3.6rem;
@@ -206,15 +215,41 @@ h1 {
   margin:0 0 20px;
 }
 
+.name-zh {
+  display: block;
+  color: #595959;
+  font-size: 0.62em;
+  font-weight: 500;
+  margin-top: 0.35rem;
+}
+
 h2 {
   color:#043361;
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
+  padding-left: 0.5em;
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.18em;
+  bottom: 0.18em;
+  width: 3px;
+  border-radius: 2px;
+  background-color: #043361;
+  opacity: 0.68;
 }
 
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
+}
+
+section > p + p {
+  margin-top: -0.8rem;
 }
 
 h1, h2, h3 {
@@ -528,4 +563,25 @@ footer {
   margin-left: 0px;
   display:none;
   font-family: monospace;
+}
+
+section ul {
+  margin-top: 0.4rem;
+  margin-bottom: 1.4rem;
+  padding-left: 1.4rem;
+}
+
+section ul > li {
+  margin-bottom: 0.45rem;
+  line-height: 1.55;
+}
+
+section ul > li > ul {
+  margin-top: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+
+section ul > li > ul > li {
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
 }

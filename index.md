@@ -4,19 +4,17 @@ layout: homepage
 
 ## About Me
 
-Hello, I am <span class="date-tag">Zhongyi Wang</span>, a master student (2025-2028) in the Visual & Data Intelligence (<a href="https://vdi.sist.shanghaitech.edu.cn/">VDI</a>) Center, ViHumanLab at ShanghaiTech University (<a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech</a>), advised by <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Prof. Jingya Wang</a>, jointly with <a href="https://shiye21.github.io/">Prof. Ye Shi</a> in Shanghai, China. Prior to this, I received my Bachelor degree from <a href="https://english.whut.edu.cn">WHUT</a>.
+Hello, I am <span class="date-tag">Zhongyi Wang</span>, a master student (2025-2028) at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a>, advised by <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Prof. Jingya Wang</a>, jointly with <a href="https://shiye21.github.io/">Prof. Ye Shi</a> in Shanghai, China. Prior to this, I received my Bachelor degree from <a href="https://english.whut.edu.cn">WHUT</a>.
 
-## Research Interests
+My research interests focus on <strong>robot learning</strong> and <strong>robotic foundation models</strong>, especially post-training for robotic foundation models and real-world robot learning systems.
 
-My main area of interests focuses on <strong>robot learning</strong> and <strong>robotic foundation models</strong>.
-
-- **Robotic Foundation Model:** post-training for Robotic Foundation Models
-- **Real-World Robot Learning System:** real-world learning based on Robotic Foundation Models
-
-## News
-
-- <span class="date-tag">2026.05</span> Two papers accepted by ICML 2026.
-- <span class="date-tag">2025.06</span> I graduate from <a href="https://english.whut.edu.cn">WHUT</a> as an outstanding graduate.
+<div class="content-news">
+<p class="updates-label"><strong>Recent updates:</strong></p>
+<ul>
+  <li><span class="date-tag">2026.05</span> Two papers accepted by ICML 2026.</li>
+  <li><span class="date-tag">2025.06</span> I graduate from <a href="https://english.whut.edu.cn">WHUT</a> as an outstanding graduate.</li>
+</ul>
+</div>
 
 {% include_relative _includes/publications.md %}
 
@@ -27,7 +25,7 @@ My main area of interests focuses on <strong>robot learning</strong> and <strong
 ## Honors and Awards
 
 - <span class="date-tag">2025.06</span> <strong>Distinguished Undergraduate Thesis (Top 3%) / Outstanding Graduate</strong>, WHUT
-- <span class="date-tag">2024.11</span> <strong>National Scholarship</strong>, Chinese Ministry of Education, China (Highest Government Honor for Undergraduates)
+- <span class="date-tag">2024.11</span> <strong>National Scholarship</strong>, Chinese Ministry of Education, China
 - <span class="date-tag">2023.09</span> <strong>National First Prize</strong>, China Undergraduate Mathematical Contest in Modeling (CUMCM), China Society for Industrial and Applied Mathematics <a href="/assets/files/2023CUMCM.pdf" target="_blank">pdf</a>
 
 

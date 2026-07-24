@@ -89,25 +89,27 @@
 
 .project-links a.btn {
   display: inline-block;
-  color: #000000;
-  border: 1px solid #000000;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  color: #043361;
+  border: 1px solid rgba(4, 51, 97, 0.45);
+  border-radius: 6px;
+  padding: 0.2rem 0.85rem;
+  margin-right: 0.4rem;
+  background-color: transparent;
   text-decoration: none;
+  transition: color .15s ease, background-color .15s ease, border-color .15s ease;
 }
 
 .project-links a.btn:hover {
   color: var(--global-theme-color);
   border-color: var(--global-theme-color);
+  background-color: rgba(62, 183, 240, 0.10);
   text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
   .project-links a.btn {
-    color: #FFFFFF;
-    border-color: #FFFFFF;
+    color: #dadbdf;
+    border-color: rgba(218, 219, 223, 0.5);
   }
 }
 
