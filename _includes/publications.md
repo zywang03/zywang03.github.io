@@ -143,6 +143,10 @@
     margin-top: 0.3rem;
   }
 
+  .publications ol.bibliography li .links a.btn {
+    font-size: 1em !important;
+  }
+
 }
 
 </style>
