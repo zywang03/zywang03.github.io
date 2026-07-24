@@ -99,26 +99,25 @@
 
 @media print, screen and (max-width: 480px) {
   .publications ol.bibliography .pub-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.65rem;
+    display: block;
   }
 
-  .pub-row > .abbr,
+  .publications ol.bibliography .pub-row > .abbr,
   .publications ol.bibliography .pub-row > .col-sm-9 {
     box-sizing: border-box;
   }
 
-  .publications ol.bibliography li .abbr {
-    flex: 0 0 34%;
-    margin-bottom: 0;
+  .publications ol.bibliography .pub-row > .abbr {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0.45rem;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
   .publications ol.bibliography .pub-row > .col-sm-9 {
-    flex: 1 1 auto;
-    min-width: 0;
+    width: 100%;
+    max-width: 100%;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -126,7 +125,7 @@
   .publications ol.bibliography li .teaser {
     display: block;
     width: 100%;
-    max-width: none;
+    max-width: 100%;
     height: auto;
     aspect-ratio: 200 / 108;
     margin: 0;
@@ -135,18 +134,8 @@
   .publications ol.bibliography li .abbr abbr {
     top: -5px;
     left: -5px;
-    padding: 0.16rem 0.5rem;
-    font-size: 0.64rem;
-  }
-
-  .publications ol.bibliography li .title {
-    font-size: 0.88rem;
-    line-height: 1.32;
-  }
-
-  .publications ol.bibliography li .author {
-    font-size: 0.82rem;
-    line-height: 1.35;
+    padding: 0.22rem 0.72rem;
+    font-size: 0.9rem;
   }
 
   .publications ol.bibliography li .links {
@@ -154,9 +143,6 @@
     margin-top: 0.3rem;
   }
 
-  .publications ol.bibliography li .links a.btn {
-    padding: 0.08rem 0.35rem;
-    font-size: 12px !important;
-  }
 }
+
 </style>
