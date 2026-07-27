@@ -42,6 +42,20 @@
   margin-bottom: 0.35rem;
 }
 
+.profile-badges {
+  line-height: 1.1;
+  margin: -0.25rem 0 0.55rem;
+}
+
+.profile-badges a {
+  display: inline-block;
+  margin: 0 0.18rem 0.12rem 0;
+}
+
+.profile-badges img {
+  vertical-align: middle;
+}
+
 .site-controls {
   position: fixed;
   top: 1rem;
@@ -192,6 +206,22 @@ papertitle {
   color: #043361;
   font-weight: 600;
   font-size: 90%;
+  white-space: nowrap;
+}
+
+.school-logo {
+  border-radius: 50%;
+  display: inline-block;
+  height: 1em;
+  margin: 0 0.18em 0 0.08em;
+  object-fit: cover;
+  object-position: left center;
+  vertical-align: -0.12em;
+  width: 1em;
+}
+
+.school-entry {
+  display: inline-block;
   white-space: nowrap;
 }
 
